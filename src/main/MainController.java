@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.controlsfx.dialog.Dialogs;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -72,9 +74,10 @@ public class MainController extends AnchorPane implements Initializable {
 	}
 
 	
+	@SuppressWarnings("deprecation")
 	@FXML
 	public void handleSearch(ActionEvent event) {
-		System.out.println(searchText.getText());
+		Dialogs.create().title("Under construction").masthead("Under construction").showInformation();
 	}
 	
 	@FXML
