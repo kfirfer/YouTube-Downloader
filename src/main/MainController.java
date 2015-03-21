@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.controlsfx.dialog.Dialogs;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -18,6 +16,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.DirectoryChooser;
 
+import org.controlsfx.dialog.Dialogs;
+
 import com.github.axet.vget.VGet;
 import com.github.axet.vget.info.VGetParser;
 import com.github.axet.vget.info.VideoInfo;
@@ -27,6 +27,7 @@ import com.github.axet.wget.info.DownloadInfo;
 import com.github.axet.wget.info.DownloadInfo.Part;
 import com.github.axet.wget.info.URLInfo.States;
 
+@SuppressWarnings("deprecation")
 public class MainController extends AnchorPane implements Initializable {
 
 	@FXML
@@ -74,7 +75,6 @@ public class MainController extends AnchorPane implements Initializable {
 	}
 
 	
-	@SuppressWarnings("deprecation")
 	@FXML
 	public void handleSearch(ActionEvent event) {
 		Dialogs.create().title("Under construction").masthead("Under construction").showInformation();
